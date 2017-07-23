@@ -27,6 +27,7 @@
 
 
 CREATE INDEX title_index ON car_models(make_title);
+-- CREATE INDEX lam_index ON car_models(make_title) WHERE make_code LIKE '%LAM%';
 
 SELECT DISTINCT make_title FROM car_models WHERE make_code LIKE '%LAM%';
 
